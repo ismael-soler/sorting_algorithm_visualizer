@@ -1,6 +1,6 @@
 <!--HEADER-->
 <h1 align="center">
- Algorithm Visualizer
+<img width=6% src="https://cdn-icons-png.flaticon.com/512/2103/2103658.png" >  Algorithm Visualizer
 </h1>
 
 
