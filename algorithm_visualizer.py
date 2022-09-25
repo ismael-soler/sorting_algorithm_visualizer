@@ -63,7 +63,7 @@ def draw(draw_info, algo_name, ascending):
     # Blit a surface to another screen. auto adjust to the center
     draw_info.window.blit(controls, (draw_info.width / 2 - controls.get_width() / 2 , 50))
 
-    sorting = draw_info.FONT.render("I - Insertion Sort | B - Bubble Sort", 1, draw_info.BLACK)
+    sorting = draw_info.FONT.render(f"I - Insertion Sort | B - Bubble Sort | Speed - Up or Down", 1, draw_info.BLACK)
     draw_info.window.blit(sorting, (draw_info.width / 2 - sorting.get_width() / 2 , 75))
 
     draw_list(draw_info)
@@ -158,6 +158,7 @@ def main():
     n = 100
     min_val = 0
     max_val = 150
+    speed = 150
 
     lst = generate_starting_list(n, min_val, max_val)
     # draw_info is an instance of a DrawInformation class
@@ -170,7 +171,7 @@ def main():
     sorting_algorithm_generator = None
 
     while run:
-        clock.tick(500)
+        clock.tick(speed)
 
         if sorting:
             # if this doesn't work it means the generator is done
@@ -212,6 +213,12 @@ def main():
             elif event.key == pygame.K_b and not sorting:
                 sorting_algorithm = bubble_sort
                 sorting_algo_name = "Bubble Sort"
+            elif event.key == pygame.K_UP:
+                speed += 50
+            elif event.key == pygame.K_DOWN:
+                speed -= 50
+                if speed < 0:
+                    speed = 1
 
 
     pygame.quit()
