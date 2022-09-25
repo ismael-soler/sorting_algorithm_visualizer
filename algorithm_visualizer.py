@@ -155,9 +155,9 @@ def main():
     run = True
     clock = pygame.time.Clock()
 
-    n = 50
+    n = 100
     min_val = 0
-    max_val = 100
+    max_val = 150
 
     lst = generate_starting_list(n, min_val, max_val)
     # draw_info is an instance of a DrawInformation class
@@ -170,7 +170,7 @@ def main():
     sorting_algorithm_generator = None
 
     while run:
-        clock.tick(120)
+        clock.tick(500)
 
         if sorting:
             # if this doesn't work it means the generator is done
