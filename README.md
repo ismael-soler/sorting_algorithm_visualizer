@@ -12,15 +12,15 @@ A simple algorithm visualizer made in python. The code allows for more algorithm
 <br>
 
 
-## **Bubble Sort**
+## **Bubble Sort - Ascending**
 <div align="center">
-    <img align="center" width=85% src="https://s4.gifyu.com/images/Animationd05ea77c34b28ee1.gif" alt="BubbleSort" border="0" />
+    <img align="center" width=85% src="https://s5.gifyu.com/images/Animationa5fb4489cc75b529.gif" alt="BubbleSort" border="0" />
 </div>
 
 <br>
 
-## **Insertion Sort**
+## **Insertion Sort - Descending**
 <div align="center">
-    <img align="center" width=85% src="https://s5.gifyu.com/images/Animation20c16a81f340656fd.gif" alt="InsertionSort" />
+    <img align="center" width=85% src="https://s5.gifyu.com/images/Animation2ce2deed5a327d003.gif" alt="InsertionSort" />
 </div>
 
