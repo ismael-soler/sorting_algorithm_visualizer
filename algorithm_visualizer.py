@@ -161,7 +161,7 @@ def main():
 
     lst = generate_starting_list(n, min_val, max_val)
     # draw_info is an instance of a DrawInformation class
-    draw_info = DrawInformation(800, 600, lst)
+    draw_info = DrawInformation(1200, 900, lst)
     sorting = False
     ascending = True
 
